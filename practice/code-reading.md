@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+x is considered as two different variable.because it declared separately inside the function block
 
 ## Question 2
 
@@ -34,6 +35,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+console.log(y)=> y is not defined. because it declared inside the function block.
+console.log(f1())=> it return nothing(undefined), it just print the value of x;
 
 ## Question 3
 
@@ -62,3 +65,8 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+x is declared globally as "const", so x value is not changed inside the function. so the value of x is 9
+console.log(x);=>output=9
+
+y is declared globally "const", when the f2(x) called y's property value is manipulated inside the function. so the value of x is 10 
+console.log(y);=>output={x:10}

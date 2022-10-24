@@ -70,3 +70,13 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function displayGryffindorHousePeople(array){
+  array.filter(({house})=>house==="Gryffindor").map(({firstName,lastName})=>console.log(`${firstName} ${lastName}`))
+}
+displayGryffindorHousePeople(hogwarts);
+
+function displayNameOfTeacherHavePet(array){
+  array.filter(({pet,occupation})=>(occupation==="Teacher" && pet!=null)).map(({firstName,lastName})=>console.log(`${firstName} ${lastName}`))
+}
+displayNameOfTeacherHavePet(hogwarts);
